@@ -1,0 +1,54 @@
+/* Responsive styles for header and navigation */
+
+/* Medium devices (tablets) */
+@media (max-width: 991px) {
+  header {
+    padding: 10px 5px;
+  }
+
+  .nav-container {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 0.3rem;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+
+  .logo img {
+    height: 15px;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .logo img {
+    height: 25px;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  .nav-container {
+    width: 95%;
+    padding: 0 10px;
+  }
+}

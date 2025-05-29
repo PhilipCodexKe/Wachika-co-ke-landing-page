@@ -1,0 +1,58 @@
+/* Medium devices (tablets) */
+@media (max-width: 991px) {
+  .service-big-container h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .services-card {
+    flex: 0 0 65%;
+  }
+
+  .shops {
+    margin: 2rem;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .service-big-container h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .services-card {
+    flex: 0 0 100%;
+    padding: 1.5rem;
+  }
+
+  .services-name {
+    font-size: 1.3rem;
+  }
+
+  .services-text {
+    font-size: 1rem;
+  }
+
+  .shops {
+    margin: 1rem;
+  }
+
+  .modern-list {
+    font-size: 1rem;
+  }
+
+  .modern-list li {
+    padding: 0.8rem 0.8rem 0.8rem 2rem;
+  }
+
+  .modern-list li::before {
+    left: 0.8rem;
+    top: 0.8rem;
+  }
+}

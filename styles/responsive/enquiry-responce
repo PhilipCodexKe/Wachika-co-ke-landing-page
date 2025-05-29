@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  .enquiry-form {
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    margin-top: 30px;
+  }
+
+  .enquiry-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .enquiry-form label {
+    font-size: 0.95rem;
+  }
+
+  .enquiry-form input,
+  .enquiry-form select,
+  .enquiry-form textarea {
+    font-size: 1rem;
+  }
+
+  .enquiry-form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .enquiry-form {
+    padding: 15px;
+  }
+
+  .enquiry-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .enquiry-form button {
+    padding: 10px;
+  }
+}

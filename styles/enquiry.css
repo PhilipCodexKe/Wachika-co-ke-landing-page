@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  background: url(../assets/online-shopping-concept.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.enquiry-form {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-bottom: 5rem;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4), 0 0 20px rgba(0, 123, 255, 0.3),
+    0 0 30px rgba(0, 123, 255, 0.2);
+}
+
+.enquiry-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.enquiry-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.enquiry-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000;
+  font-size: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enquiry-form select:focus {
+  outline: none;
+  border-color: rgba(0, 123, 255, 0.6);
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.enquiry-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.enquiry-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.enquiry-form button:hover {
+  background-color: #0056b3;
+}

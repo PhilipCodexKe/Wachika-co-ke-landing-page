@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+  .site-footer {
+    justify-content: space-evenly;
+  }
+  .footer-column {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 1rem;
+  }
+
+  .footer-column p,
+  .footer-column a {
+    font-size: 0.9rem;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+}

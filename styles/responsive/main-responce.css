@@ -1,0 +1,156 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+/* Hide menu icon by default */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #02f4f1;
+  border: 2px solid #02f4f1;
+  border-radius: 30%;
+  padding: 0 5px;
+  user-select: none;
+}
+
+/* Sidebar styles */
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* hidden by default, off screen */
+  width: 250px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#sidebar a {
+  color: #02f4f1;
+  text-decoration: none;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+/* Show sidebar when .show class is toggled */
+#sidebar.show {
+  right: 0;
+}
+
+/* Responsive for small devices (phones/tablets) */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  /* Optionally, hide nav-links if you have any */
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5% 5%;
+    height: 60vh;
+  }
+
+  .h1-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-container .h1-box h1 {
+    font-size: 2.2rem;
+  }
+
+  .logo-container .h1-box h1 strong {
+    font-size: 3rem;
+  }
+
+  .intro-box {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 5%;
+    text-align: center;
+  }
+
+  .text-container {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .logo-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Small devices (Phones) */
+@media (max-width: 600px) {
+  .logo-container .h1-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .logo-container .h1-box h1 strong {
+    font-size: 2.2rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .partner {
+    height: 130px;
+    overflow: hidden;
+  }
+
+  .partner span {
+    font-size: 0.9rem;
+  }
+
+  .about-link {
+    height: 150px;
+  }
+
+  .about-link a {
+    font-size: 0.9rem;
+  }
+
+  .logo-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-box img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .partners-section {
+    padding: 1rem;
+  }
+
+  .partners-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .partner span {
+    font-size: 0.9rem;
+  }
+}
