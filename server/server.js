@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit-enquiry", async (req, res) => {
-  const { name, email, phone, dropDown, message } = req.body;
+  const { name, email, company, phone, address, dropDown, message } = req.body;
 
   // Create transporter
   const transporter = nodemailer.createTransport({
@@ -38,7 +38,9 @@ app.post("/submit-enquiry", async (req, res) => {
       <h2>New Service Enquiry</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Email:</strong> ${company}</p>
       <p><strong>Phone:</strong> ${phone}</p>
+      <p><strong>Phone:</strong> ${address}</p>
       <p><strong>Service:</strong> ${dropDown}</p>
       <p><strong>Message:</strong><br/>${message}</p>
     `,
