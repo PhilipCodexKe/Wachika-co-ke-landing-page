@@ -4,10 +4,6 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  background: url(../assets/testimony.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -18,18 +14,8 @@
   display: none;
   text-align: center;
   transition: opacity 0.5s ease-in-out;
-}
-
-.testimony .overlay {
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
   background-color: rgba(131, 161, 180, 0.3);
-  z-index: 1;
+  border-radius: 20px;
 }
 
 .testimony.active {
