@@ -1,19 +1,32 @@
-const hiddenContent = document.querySelector(".hidden-content");
-const viewMoreBtn = document.getElementById("more");
-const viewLessBtn = document.getElementById("less");
+function setupToggle(
+  viewMoreId,
+  viewLessId,
+  contentClass,
+  displayType = "flex"
+) {
+  const hiddenContent = document.querySelector(contentClass);
+  const viewMoreBtn = document.getElementById(viewMoreId);
+  const viewLessBtn = document.getElementById(viewLessId);
 
-viewMoreBtn.addEventListener("click", function () {
-  hiddenContent.style.display = "flex";
-  viewMoreBtn.style.display = "none";
-  viewLessBtn.style.display = "inline-block";
-});
+  viewMoreBtn.addEventListener("click", () => {
+    hiddenContent.style.display = displayType;
+    viewMoreBtn.style.display = "none";
+    viewLessBtn.style.display = "inline-block";
+  });
 
-viewLessBtn.addEventListener("click", function () {
-  hiddenContent.style.display = "none";
-  viewMoreBtn.style.display = "inline-block";
-  viewLessBtn.style.display = "none";
-});
+  viewLessBtn.addEventListener("click", () => {
+    hiddenContent.style.display = "none";
+    viewMoreBtn.style.display = "inline-block";
+    viewLessBtn.style.display = "none";
+  });
+}
 
+// Call the reusable function for each section
+setupToggle("more", "less", ".hidden-content");
+setupToggle("more1", "less1", ".more-feedback");
+setupToggle("more2", "less2", ".more-book-keeping");
+
+//sidebar
 function toggleSidebar() {
   document.getElementById("sidebar").classList.toggle("show");
 }

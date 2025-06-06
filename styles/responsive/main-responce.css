@@ -37,7 +37,6 @@
   user-select: none;
 }
 
-/* Show sidebar when .show class is toggled */
 #sidebar.show {
   right: 0;
 }
@@ -48,7 +47,6 @@
     display: block;
   }
 
-  /* Optionally, hide nav-links if you have any */
   .nav-links {
     display: none;
   }
@@ -102,6 +100,14 @@
 
   .logo-container .h1-box h1 strong {
     font-size: 2.2rem;
+  }
+  .main-testimony {
+    display: flex;
+  }
+  .review {
+    font-size: 1rem;
+    margin-left: 0;
+    position: absolute;
   }
 
   .partners-grid {

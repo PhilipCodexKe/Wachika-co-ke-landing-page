@@ -52,7 +52,11 @@
   color: #6dbf71;
   margin-bottom: 0.2rem;
 }
-
+.more-feedback,
+.more-book-keeping {
+  display: flex;
+  flex-direction: column;
+}
 .view-more-btn {
   font-size: 0.95rem;
   color: #6dbf71;
